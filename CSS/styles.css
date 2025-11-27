@@ -3,6 +3,10 @@ body{
     background-image: url('/IMG/aficion-tribuna.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
+    background-color: blue;
+    color: black;
+    font-size: large;
+    display: none;
 }
 
 header{
