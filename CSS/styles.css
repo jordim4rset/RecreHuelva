@@ -4,10 +4,6 @@ body{
     background-image: url('/IMG/aficion-tribuna.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
-    background-color: blue;
-    color: black;
-    font-size: large;
-    display: none;
 }
 
 header {
@@ -76,10 +72,4 @@ nav {
     }
   }
 }
-* {
-  background-color: green;
-  margin: 50px;
-}
-div {
-  background-color: aqua;
-}
+
