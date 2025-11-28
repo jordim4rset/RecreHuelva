@@ -26,6 +26,16 @@ nav a {
   color: white;
 }
 
+footer {
+  background: #035aa6;
+  margin-bottom: 0;
+  margin-top: 10rem;
+}
+footer img {
+  display: flex;
+  max-height: 10rem;
+}
+
 #escudo {
   width: 50px;
 }
