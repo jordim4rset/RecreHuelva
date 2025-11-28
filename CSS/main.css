@@ -68,4 +68,16 @@ nav a {
   color: #ffd80b;
 }
 
+#contenido-txt {
+  display: flex;
+  text-align: center;
+  padding: auto;
+
+  .columnas {
+    padding: 20px;
+  }
+}
+
+
+
 /*# sourceMappingURL=main.css.map */
