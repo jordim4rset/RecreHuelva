@@ -26,6 +26,27 @@ nav a {
   color: white;
 }
 
+footer {
+  background: #035aa6;
+  max-height: 35vh;
+  margin-bottom: 0;
+  margin-top: 10rem;
+  display: flex;
+}
+footer h2 {
+  text-align: center;
+  align-items: center;
+  color: white;
+}
+footer .patrocinadores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .patrocinadores img {
+  display: block;
+}
+
 #escudo {
   width: 50px;
 }
