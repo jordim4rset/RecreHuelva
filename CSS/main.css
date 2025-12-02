@@ -2,7 +2,9 @@ body {
   margin: 0;
   background-image: url("/IMG/aficion-tribuna.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 header {
@@ -31,7 +33,10 @@ footer {
   max-height: 35vh;
   margin-bottom: 0;
   margin-top: 10rem;
+  height: 30%;
+  width: 100%;
   display: flex;
+  justify-content: space-evenly;
 }
 footer h2 {
   text-align: center;
@@ -40,10 +45,11 @@ footer h2 {
 }
 footer .patrocinadores {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 footer .patrocinadores img {
+  max-width: 20%;
   display: block;
 }
 
@@ -88,17 +94,5 @@ footer .patrocinadores img {
 #contenedor-contenido #contenido-txt h3 {
   color: #ffd80b;
 }
-
-#contenido-txt {
-  display: flex;
-  text-align: center;
-  padding: auto;
-
-  .columnas {
-    padding: 20px;
-  }
-}
-
-
 
 /*# sourceMappingURL=main.css.map */

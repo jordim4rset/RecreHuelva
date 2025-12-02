@@ -26,7 +26,10 @@ footer{
     max-height: 35vh;
     margin-bottom: 0;
     margin-top: 10rem;
+    height: 30%;
+    width: 100%;
     display: flex;
+    justify-content: space-evenly;
     h2{
         text-align: center;
         align-items: center;
@@ -34,10 +37,11 @@ footer{
     }
     .patrocinadores{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         
         img{
+            max-width: 20%;
             display: block;
         }
     }
