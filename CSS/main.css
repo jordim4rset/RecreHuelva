@@ -5,6 +5,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  min-height: 100vh;
 }
 
 header {
@@ -66,23 +67,41 @@ footer .patrocinadores img {
   height: 100%;
 }
 
-#contenedor-contenido {
+.jugadores {
+  margin: 40px 0px 0px 40px;
+}
+.jugadores div {
+  display: flex;
+  width: 50px;
+  gap: 5rem;
+}
+.jugadores img {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.contenedor-contenido {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 30px;
   width: 100%;
 }
-#contenedor-contenido img {
+.contenedor-contenido img {
   width: 30%;
   height: 100%;
+  min-width: 200px;
+  min-height: 250px;
+  max-width: 260px;
   border: solid 3px #ffd80b;
   border-radius: 10px;
   margin-right: 10px;
+  object-fit: cover;
 }
-#contenedor-contenido #contenido-txt {
+.contenedor-contenido .contenido-txt {
   width: 50%;
   height: 100%;
+  min-height: 300px;
   margin-left: 10px;
   font-size: large;
   background-color: #035aa6;
@@ -90,7 +109,7 @@ footer .patrocinadores img {
   padding-left: 10px;
   border-radius: 5px;
 }
-#contenedor-contenido #contenido-txt h3 {
+.contenedor-contenido .contenido-txt h3 {
   color: #ffd80b;
 }
 

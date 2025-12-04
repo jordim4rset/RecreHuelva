@@ -13,34 +13,61 @@
     height: 100%;
 }
 
-#contenedor-contenido {
+
+$gap-size: 5rem;
+
+
+.jugadores {
+
+    margin: 40px 0px 0px 40px;
+    div{
+         display: flex;
+    width: 50px;
+    gap: $gap-size;
+        
+    }
+   
+    
+    img{
+        border: 1px solid black;
+        border-radius: 10px;
+
+    }
+}
+
+
+.contenedor-contenido {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 30px;
     width: 100%;
     
-
     img {
         width: 30%;
         height: 100%;
-        border: solid 3px #ffd80b;
+        min-width: 200px;
+        min-height: 250px;
+        max-width: 260px;
+        border: solid 3px $colorDetallesAmarillo;
         border-radius: 10px;
         margin-right: 10px;
+        object-fit: cover;
     }
 
-    #contenido-txt {
+    .contenido-txt {
         width: 50%;
         height: 100%;
+        min-height: 300px;
         margin-left: 10px;
         font-size: large;
-        background-color: #035aa6;
-        color: white;
+        background-color: $colorFondo;
+        color: $colorLetrasHeader;
         padding-left: 10px;
         border-radius: 5px;
 
         h3 {
-            color: #ffd80b;
+            color: $colorDetallesAmarillo;
         }
     }
 }
