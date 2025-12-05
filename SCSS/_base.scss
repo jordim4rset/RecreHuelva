@@ -9,3 +9,27 @@ body{
     background-attachment: fixed;
     min-height: 100vh;
 }
+
+.body-resultados-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    header {
+        height: 80px;
+    }
+
+    main {
+        flex: 1;
+        display: flex;
+        width: 100%;
+
+        .divResultados{
+            width: 50%;
+        }
+
+        .divClasificacion {
+            width: 50%;
+        }
+    }
+}

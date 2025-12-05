@@ -1,1 +1,43 @@
 @use "variables" as *;
+
+/*
+@mixin colorDiv($resultado){
+    @if $resultado == victoria{
+        background-color: $colorVictoria;
+    } @else if $resultado == derrota{
+        background-color: $colorDerrota;
+    } @else if $resultado == empate{
+        background-color: $colorEmpate;
+    }
+}
+*/
+
+@mixin colorDiv($resultado){
+    @if $resultado == victoria{
+        border: solid 3px $colorVictoria;
+        box-shadow: 2px 2px 5px 0px $colorVictoria;
+    } @else if $resultado == derrota{
+        border: solid 3px $colorDerrota;
+        box-shadow: 2px 2px 5px 0px $colorDerrota;
+    } @else if $resultado == empate{
+        border: solid 3px $colorEmpate;
+        box-shadow: 2px 2px 5px 0px $colorEmpate;
+    }
+}
+
+@mixin fila($bg, $color){
+    background-color: $bg;
+    color: $color;
+}
+
+@mixin flex-row{
+    display: flex;
+    align-items: center;
+}
+
+@mixin col($width: 1){
+    flex: $width;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+

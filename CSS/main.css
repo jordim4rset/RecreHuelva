@@ -1,3 +1,14 @@
+/*
+@mixin colorDiv($resultado){
+    @if $resultado == victoria{
+        background-color: $colorVictoria;
+    } @else if $resultado == derrota{
+        background-color: $colorDerrota;
+    } @else if $resultado == empate{
+        background-color: $colorEmpate;
+    }
+}
+*/
 body {
   margin: 0;
   background-image: url("/IMG/aficion-tribuna.jpg");
@@ -6,6 +17,26 @@ body {
   background-position: center;
   background-attachment: fixed;
   min-height: 100vh;
+}
+
+.body-resultados-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.body-resultados-page header {
+  height: 80px;
+}
+.body-resultados-page main {
+  flex: 1;
+  display: flex;
+  width: 100%;
+}
+.body-resultados-page main .divResultados {
+  width: 50%;
+}
+.body-resultados-page main .divClasificacion {
+  width: 50%;
 }
 
 header {
@@ -73,8 +104,6 @@ footer .patrocinadores img {
   justify-content: center;
   margin: 30px;
   width: 100%;
-  min-height: 300px;
-  box-shadow: 10px;
 }
 .contenedor-contenido img {
   width: 30%;
@@ -100,6 +129,81 @@ footer .patrocinadores img {
 }
 .contenedor-contenido .contenido-txt h3 {
   color: #ffd80b;
+}
+
+.divResultados div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+  margin-top: 30px;
+  border: 1px solid black;
+  width: 80%;
+  background-color: rgb(247, 237, 237);
+}
+.divResultados div img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+}
+.divResultados div p {
+  font-size: 60px;
+}
+.divResultados .derrota {
+  border: solid 3px rgba(255, 30, 0, 0.7254901961);
+  box-shadow: 2px 2px 5px 0px rgba(255, 30, 0, 0.7254901961);
+}
+.divResultados .empate {
+  border: solid 3px rgba(7, 7, 7, 0.7333333333);
+  box-shadow: 2px 2px 5px 0px rgba(7, 7, 7, 0.7333333333);
+}
+.divResultados .victoria {
+  border: solid 3px rgba(0, 255, 42, 0.8470588235);
+  box-shadow: 2px 2px 5px 0px rgba(0, 255, 42, 0.8470588235);
+}
+
+.divClasificacion {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.divClasificacion .tabla-header {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+.divClasificacion .tabla-header .col {
+  flex: 1;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+}
+.divClasificacion .tabla-row {
+  display: flex;
+  align-items: center;
+}
+.divClasificacion .tabla-row:nth-child(odd) {
+  background-color: #fafafa;
+  color: #000;
+}
+.divClasificacion .tabla-row:nth-child(even) {
+  background-color: #fff;
+  color: #000;
+}
+.divClasificacion .tabla-row.top1 {
+  background-color: #d4edda;
+  color: #000;
+  font-weight: bold;
+}
+.divClasificacion .tabla-row .col {
+  flex: 1;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+}
+.divClasificacion .tabla-row .col img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
 }
 
 /*# sourceMappingURL=main.css.map */
