@@ -103,15 +103,27 @@ footer .patrocinadores img {
 }
 
 .jugadores {
-  margin: 40px 0px 0px 40px;
+  z-index: -1000;
+  margin: 40px 0px 0px 0px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 .jugadores div {
   display: flex;
-  width: 50px;
+  justify-content: space-evenly;
+  display: flex;
   gap: 5rem;
 }
+.jugadores h3 {
+  font-size: 50px;
+  margin: 10px 0px 30px 50px;
+}
 .jugadores img {
-  border: 1px solid black;
+  border: 1px solid rgb(53, 31, 31);
   border-radius: 10px;
 }
 
@@ -192,7 +204,7 @@ footer .patrocinadores img {
 }
 .divClasificacion .tabla-header .col {
   flex: 1;
-  padding: 10px 15px;
+  padding: 20px 20px;
   border-bottom: 1px solid #ddd;
 }
 .divClasificacion .tabla-row {
@@ -214,7 +226,7 @@ footer .patrocinadores img {
 }
 .divClasificacion .tabla-row .col {
   flex: 1;
-  padding: 10px 15px;
+  padding: 20px 20px;
   border-bottom: 1px solid #ddd;
 }
 .divClasificacion .tabla-row .col img {
@@ -226,16 +238,6 @@ footer .patrocinadores img {
 #box_player {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-.jugadores {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 15px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -19,17 +19,24 @@ $gap-size: 5rem;
 
 
 .jugadores {
+    z-index: -1000;
+    margin: 40px 0px 0px 0px;
+    @include efectoGlass;
 
-    margin: 40px 0px 0px 40px;
     div{
         display: flex;
-        width: 50px;
+        justify-content: space-evenly;
+        display: flex;
         gap: $gap-size;
     }
 
+    h3{
+        font-size: 50px;
+        margin: 10px 0px 30px 50px;
+    }
 
     img{
-        border: 1px solid black;
+        border: 1px solid rgb(53, 31, 31);
         border-radius: 10px;
 
     }
@@ -152,18 +159,5 @@ $gap-size: 5rem;
 #box_player{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}
-
-.jugadores{
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-radius: 15px;
-
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-
     
 }
