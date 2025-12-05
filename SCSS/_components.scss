@@ -15,6 +15,28 @@
 }
 
 
+$gap-size: 5rem;
+
+
+.jugadores {
+
+    margin: 40px 0px 0px 40px;
+    div{
+         display: flex;
+    width: 50px;
+    gap: $gap-size;
+        
+    }
+   
+    
+    img{
+        border: 1px solid black;
+        border-radius: 10px;
+
+    }
+}
+
+
 .contenedor-contenido {
     display: flex;
     align-items: center;

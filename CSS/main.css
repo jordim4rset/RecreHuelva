@@ -98,6 +98,19 @@ footer .patrocinadores img {
   height: 100%;
 }
 
+.jugadores {
+  margin: 40px 0px 0px 40px;
+}
+.jugadores div {
+  display: flex;
+  width: 50px;
+  gap: 5rem;
+}
+.jugadores img {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
 .contenedor-contenido {
   display: flex;
   align-items: center;
