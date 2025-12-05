@@ -22,13 +22,12 @@ $gap-size: 5rem;
 
     margin: 40px 0px 0px 40px;
     div{
-         display: flex;
-    width: 50px;
-    gap: $gap-size;
-        
+        display: flex;
+        width: 50px;
+        gap: $gap-size;
     }
-   
-    
+
+
     img{
         border: 1px solid black;
         border-radius: 10px;
@@ -43,7 +42,6 @@ $gap-size: 5rem;
     justify-content: center;
     margin: 30px;
     width: 100%;
-    
 
     img {
         width: 30%;
@@ -75,7 +73,7 @@ $gap-size: 5rem;
 }
 
 .divResultados{
-    
+
     div{
         display: flex;
         align-items: center;
@@ -84,8 +82,6 @@ $gap-size: 5rem;
         margin-top: 30px;
         border: 1px solid black;
         width: 80%;
-        
-        
         background-color: $colorFondoDivResultados;
         img{
             width: 100px;
@@ -108,7 +104,6 @@ $gap-size: 5rem;
     .victoria{
         @include colorDiv("victoria");
     }
-    
 }
 
 .divClasificacion{
@@ -152,4 +147,23 @@ $gap-size: 5rem;
             }
         }
     }
+}
+
+#box_player{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.jugadores{
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+
+    
 }
