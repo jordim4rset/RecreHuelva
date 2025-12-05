@@ -1,4 +1,5 @@
 @use "variables" as *;
+@use "mixins" as *;
 
 #escudo {
     width: 50px;
@@ -43,6 +44,7 @@ $gap-size: 5rem;
     margin: 30px;
     width: 100%;
     
+
     img {
         width: 30%;
         height: 100%;
@@ -68,6 +70,86 @@ $gap-size: 5rem;
 
         h3 {
             color: $colorDetallesAmarillo;
+        }
+    }
+}
+
+.divResultados{
+    
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 20px;
+        margin-top: 30px;
+        border: 1px solid black;
+        width: 80%;
+        
+        
+        background-color: $colorFondoDivResultados;
+        img{
+            width: 100px;
+            height: 150px;
+            object-fit: cover;
+        }
+        p{
+            font-size: 60px;
+        }
+    }
+
+    .derrota{
+        @include colorDiv("derrota");
+    }
+
+    .empate{
+        @include colorDiv("empate");
+    }
+
+    .victoria{
+        @include colorDiv("victoria");
+    }
+    
+}
+
+.divClasificacion{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .tabla-header{
+        @include flex-row;
+        background-color: #f5f5f5;
+        font-weight: bold;
+
+        .col{
+            @include col;
+        }
+    }
+
+    .tabla-row{
+        @include flex-row;
+
+        &:nth-child(odd){
+            @include fila(#fafafa, #000);
+        }
+
+        &:nth-child(even){
+            @include fila(#fff, #000);
+        }
+
+        &.top1{
+            @include fila(#d4edda, #000);
+            font-weight: bold;
+        }
+
+        .col{
+            @include col;
+
+            img{
+                width: 20px;
+                height: 20px;
+                margin-right: 8px;
+            }
         }
     }
 }
