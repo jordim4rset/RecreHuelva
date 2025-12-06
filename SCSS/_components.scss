@@ -22,13 +22,13 @@
     z-index: -1000;
     margin: 40px 40px 0px 40px;
     @include efectoGlass;
-
     div{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         display: flex;
         gap: $gap-size;
+        padding-bottom: 40px;
     }
 
     h3{
@@ -37,7 +37,7 @@
     }
 
     img{
-        border: 1px solid rgb(53, 31, 31);
+        border: 1px solid $colorBordeImg;
         border-radius: 10px;
 
     }
@@ -115,14 +115,14 @@
 }
 
 .divClasificacion{
-    border: 1px solid #ddd;
+    border: 1px solid $colorBorde;
     border-radius: 8px;
     overflow: hidden;
     
 
     .tabla-header{
         @include flex-row;
-        background-color: #f5f5f5;
+        background-color: $colorFondoTabla;
         font-weight: bold;
 
         .col{
@@ -134,15 +134,15 @@
         @include flex-row;
 
         &:nth-child(odd){
-            @include fila(#fafafa, #000);
+            @include fila($colorImpar1, $colorTabla2);
         }
 
         &:nth-child(even){
-            @include fila(#fff, #000);
+            @include fila($colorPar1, $colorTabla2);
         }
 
         &.top1{
-            @include fila(#d4edda, #000);
+            @include fila($colorTop1, $colorTabla2);
             font-weight: bold;
         }
 
