@@ -1,48 +1,65 @@
-// //COLORES
-$colorFondo: #035aa6;
-$colorDetallesAmarillo: #ffd80b;
-$colorLetrasHeader: white;
-$colorVictoria: #00ff2ad8;
-$colorDerrota: #ff1e00b9;
-$colorEmpate: #070707bb;
-$colorFondoDivResultados: rgb(247, 237, 237);
-$gap-size: 5rem;
-$colorBordeResultado: black;
-$colorBordeImg: rgb(53, 31, 31);
-$colorBorde: #ddd;
-$colorFondoTabla: #f5f5f5;
-$colorImpar1: #fafafa;
-$colorTabla2: #000;
-$colorPar1: #fff;
-$colorTop1 : #d4edda;
-$colorNav: white;
-$colorFondoFooter: #035aa6;
-$colorh2footer:white;
-$colorFondoEfectoGlass: rgba(255,255,255,0.15);
-$colorBordeEfectoGlass: rgba(255,255,255,0.25);
-$colorSombraCaja: rgba(0,0,0,0.2);
-// // COLORES OSCUROS
+//FUENTES
+$font-heading: 'Montserrat', sans-serif;
+$font-body: 'Poppins', sans-serif;
+//GROSOR FUENTES
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
 
-// COLORES
+//COLORES MODO CLARO
+$colorClaroFondo: #035aa6;
+$colorClaroTituloResultados: #035aa6;
+$colorClaroDetallesAmarillo: #ffd80b;
+$colorClaroH2yH3Resultados: #ffd80b;
+$colorClaroLetrasHeader: white;
+$colorClaroVictoria: #00ff2ad8;
+$colorClaroDerrota: #ff1e00b9;
+$colorClaroEmpate: #070707bb;
+$colorClaroFondoDivResultados: rgb(247, 237, 237);
+$colorClaroBordeResultado: black;
+$colorClaroBordeImg: rgb(53, 31, 31);
+$colorClaroBorde: #ddd;
+$colorClaroFondoTabla: #f5f5f5;
+$colorClaroImpar1: #fafafa;
+$colorClaroTabla2: #000;
+$colorClaroPar1: #fff;
+$colorClaroTop1 : #d4edda;
+$colorClaroNav: white;
+$colorClaroFondoFooter: #035aa6;
+$colorClaroh2footer:white;
+$colorClaroFondoEfectoGlass: rgba(255,255,255,0.15);
+$colorClaroBordeEfectoGlass: rgba(255,255,255,0.25);
+$colorClaroSombraCaja: rgba(0,0,0,0.2);
+$colorClaroH3Plantilla: rgb(0, 0, 0);
+$gap-size: 5rem;
+
+// COLORES MODO OSCUROS
 $colorFondo: #0a1e3f; // Más oscuro que #035aa6
+$colorTituloResultados: #0a1e3f;
 $colorDetallesAmarillo: #c8a200; // Más oscuro que #ffd80b
+$colorH2yH3Resultados: #c8a200;
 $colorLetrasHeader: #e0e0e0; // Gris claro en vez de blanco
 $colorVictoria: #009a24d8; // Más oscuro que #00ff2ad8
 $colorDerrota: #b80000b9; // Más oscuro que #ff1e00b9
 $colorEmpate: #07070799; // Más oscuro que #070707bb
-$colorFondoDivResultados: rgb(180, 170, 170); // Más oscuro que rgb(247, 237, 237)
-$gap-size: 5rem;
+$colorFondoDivResultados: rgb(243, 235, 235); // Más oscuro que rgb(247, 237, 237)
 $colorBordeResultado: #333; // Más oscuro que black
 $colorBordeImg: rgb(30, 20, 20); // Más oscuro que rgb(53, 31, 31)
+$colorBorde: #000000;
 $colorBordeClasificacion: #888; // Más oscuro que #ddd
 $colorFondoTabla: #d2d2d2; // Más oscuro que #f5f5f5
 $colorImpar1: #d0d0d0; // Más oscuro que #fafafa
 $colorTabla2: #222; // Más oscuro que #000
 $colorPar1: #ccc; // Más oscuro que blanco
 $colorTop1 : #98e7b0; // Más oscuro que #d4edda
+$colorRecre: #113367;
 $colorNav: #e0e0e0; // Gris claro en vez de blanco
 $colorh2footer: #e0e0e0; // Gris claro en vez de blanco
-$colorFondoEfectoGlass: rgba(0, 0, 0, 0.25); // Oscurecido
-$colorBordeEfectoGlass: rgba(0, 0, 0, 0.4); // Oscurecido
 $colorSombraCaja: rgba(0, 0, 0, 0.4); // Más oscura que rgba(0, 0, 0, 0.2)
 $colorBordeColumna: #888; // Más oscuro que #ddd
+$colorH3Plantilla: rgb(255, 255, 255);
+$gap-size: 5rem;
+$colorFondoEfectoGlass: #0a1e3fd2; // Oscurecido
+$colorBordeEfectoGlass: #0a1e3fe4; // Oscurecido
+

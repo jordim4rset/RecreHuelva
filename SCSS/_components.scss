@@ -32,8 +32,11 @@
     }
 
     h3{
+        color: $colorH3Plantilla;
+        padding-left: 50px;
+        border-bottom: 1px solid black;
         font-size: 50px;
-        margin: 10px 0px 30px 50px;
+        margin: 10px 0px 30px 0px;
     }
 
     img{
@@ -81,16 +84,22 @@
 }
 
 .divResultados{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     div{
         display: flex;
         align-items: center;
         justify-content: space-around;
-        margin: 20px;
         margin-top: 30px;
         border: 1px solid black;
-        width: 100%;
-        background-color: $colorFondoDivResultados;
+        width: 80%;
+        @include efectoGlass;
+        z-index: -100;
+        color: white;
         img{
             width: 100px;
             height: 150px;
@@ -115,10 +124,27 @@
 }
 
 .divClasificacion{
-    border: 1px solid $colorBorde;
     border-radius: 8px;
     overflow: hidden;
-    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+
+    #tituloClasificacion{
+        background-color: $colorTituloResultados;
+        color: $colorH2yH3Resultados;
+        h2, h3{
+            padding-left: 5%;
+        }
+    }
+
+
+    div{
+        width: 80%;
+    }
 
     .tabla-header{
         @include flex-row;
@@ -146,20 +172,29 @@
             font-weight: bold;
         }
 
-        .col{
-            @include col;
-
-            img{
-                width: 20px;
-                height: 20px;
-                margin-right: 8px;
-            }
+        &.recre{
+            @include fila($colorRecre, white);
+            font-weight: bold;
         }
+
+        .col {
+            @include col;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            white-space: nowrap;
+            overflow: hidden;
+
+        img {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+}
     }
 }
 
 #box_player{
     display: flex;
     flex-direction: column;
-    
 }
