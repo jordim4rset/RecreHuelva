@@ -25,13 +25,10 @@
 
 @mixin colorDiv($resultado){
     @if $resultado == victoria{
-        border: solid 3px $colorVictoria;
         box-shadow: 2px 2px 5px 0px $colorVictoria;
     } @else if $resultado == derrota{
-        border: solid 3px $colorDerrota;
         box-shadow: 2px 2px 5px 0px $colorDerrota;
     } @else if $resultado == empate{
-        border: solid 3px $colorEmpate;
         box-shadow: 2px 2px 5px 0px $colorEmpate;
     }
 }
