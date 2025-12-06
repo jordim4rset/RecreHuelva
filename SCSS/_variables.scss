@@ -1,20 +1,48 @@
-//COLORES
-// $colorFondo: #035aa6;
-// $colorDetallesAmarillo: #ffd80b;
-// $colorLetrasHeader: white;
-// $colorVictoria: #00ff2ad8;
-// $colorDerrota: #ff1e00b9;
-// $colorEmpate: #070707bb;
-// $colorFondoDivResultados: rgb(247, 237, 237);
-//espaciados
+// //COLORES
+$colorFondo: #035aa6;
+$colorDetallesAmarillo: #ffd80b;
+$colorLetrasHeader: white;
+$colorVictoria: #00ff2ad8;
+$colorDerrota: #ff1e00b9;
+$colorEmpate: #070707bb;
+$colorFondoDivResultados: rgb(247, 237, 237);
 $gap-size: 5rem;
-//fonts
+$colorBordeResultado: black;
+$colorBordeImg: rgb(53, 31, 31);
+$colorBorde: #ddd;
+$colorFondoTabla: #f5f5f5;
+$colorImpar1: #fafafa;
+$colorTabla2: #000;
+$colorPar1: #fff;
+$colorTop1 : #d4edda;
+$colorNav: white;
+$colorFondoFooter: #035aa6;
+$colorh2footer:white;
+$colorFondoEfectoGlass: rgba(255,255,255,0.15);
+$colorBordeEfectoGlass: rgba(255,255,255,0.25);
+$colorSombraCaja: rgba(0,0,0,0.2);
+// // COLORES OSCUROS
 
-//cambio tema
-$colorFondo: #0a1e3f;               
-$colorDetallesAmarillo: #ffd80b;    
-$colorLetrasHeader: #f0f0f0;        
-$colorVictoria: #00ff4dcc;           
-$colorDerrota: #ff4a4ab3;            
-$colorEmpate: #b0b0b0cc;             
-$colorFondoDivResultados: #1e2a47; 
+// COLORES
+$colorFondo: #0a1e3f; // Más oscuro que #035aa6
+$colorDetallesAmarillo: #c8a200; // Más oscuro que #ffd80b
+$colorLetrasHeader: #e0e0e0; // Gris claro en vez de blanco
+$colorVictoria: #009a24d8; // Más oscuro que #00ff2ad8
+$colorDerrota: #b80000b9; // Más oscuro que #ff1e00b9
+$colorEmpate: #07070799; // Más oscuro que #070707bb
+$colorFondoDivResultados: rgb(180, 170, 170); // Más oscuro que rgb(247, 237, 237)
+$gap-size: 5rem;
+$colorBordeResultado: #333; // Más oscuro que black
+$colorBordeImg: rgb(30, 20, 20); // Más oscuro que rgb(53, 31, 31)
+$colorBordeClasificacion: #888; // Más oscuro que #ddd
+$colorFondoTabla: #d2d2d2; // Más oscuro que #f5f5f5
+$colorImpar1: #d0d0d0; // Más oscuro que #fafafa
+$colorTabla2: #222; // Más oscuro que #000
+$colorPar1: #ccc; // Más oscuro que blanco
+$colorTop1 : #98e7b0; // Más oscuro que #d4edda
+$colorNav: #e0e0e0; // Gris claro en vez de blanco
+$colorh2footer: #e0e0e0; // Gris claro en vez de blanco
+$colorFondoEfectoGlass: rgba(0, 0, 0, 0.25); // Oscurecido
+$colorBordeEfectoGlass: rgba(0, 0, 0, 0.4); // Oscurecido
+$colorSombraCaja: rgba(0, 0, 0, 0.4); // Más oscura que rgba(0, 0, 0, 0.2)
+$colorBordeColumna: #888; // Más oscuro que #ddd
