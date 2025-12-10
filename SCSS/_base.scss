@@ -10,11 +10,29 @@ body{
     background-position: center;
     background-attachment: fixed;
     min-height: 100vh;
+
+    transition: background-color 0.4s;
+
+    #btnCambiarTema:checked ~ * {
+        color: var(--color-letras-header);
+    }
 }
 
 h1, h2, h3{
     font-family: $font-heading;
     font-weight: $font-weight-bold;
+}
+
+.secCambioTema{
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-fondo-sec-cambio-tema);
+    color: var(--color-letras-header);
+
+    #btnCambiarTema{
+        display: none;
+    }
 }
 
 .body-resultados-page {
