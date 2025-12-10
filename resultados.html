@@ -8,61 +8,64 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body class="body-resultados-page">
+    <input type="checkbox" id="btnCambiarTema" hidden>
+
+    <section class="secCambioTema">
+        <label for="btnCambiarTema" class="theme-switch-label">
+            Cambiar Tema
+        </label>
+    </section>
     <header>
         <nav>
             <a href="index.html"><img id="escudo" src="IMG/escudoRecreHuelva.png" alt="Escudo Recre Huelva"></a>
             <p>REAL CLUB RECREATIVO DE HUELVA</p>
             <a href="index.html">INICIO</a>
             <a href="plantilla.html">PLANTILLA</a>
-            <a href="resultados.html" id="btnInicio">RESULTADOS</a>
+            <a href="resultados.html" class="btnSelec">RESULTADOS</a>
         </nav>
     </header>
-
     <main>
         <div class="divResultados">
-            <div class="victoria">
-                <img src="IMG/escudos/Union_Atletico.png" alt="Union Atletico">
+            <div>
+                <img src="IMG/escudos/Union_Atletico.png" alt="Union Atletico" class="victoria">
                 <p>0</p>
                 <p>:</p>
                 <p>1</p>
-                <img src="IMG/escudoRecreHuelva.png" alt="Atl Malaguño">
+                <img src="IMG/escudoRecreHuelva.png" alt="Recreativo Huelva">
             </div>
 
-            <div class="empate">
-                <img src="IMG/escudoRecreHuelva.png" alt="Recreativo Huelva">
+            <div>
+                <img src="IMG/escudoRecreHuelva.png" alt="Recreativo Huelva" class="empate">
                 <p>0</p>
                 <p>:</p>
                 <p>0</p>
                 <img src="IMG/escudos/CDA_Aguilas.png" alt="CDA Águilas">
             </div>
 
-            <div class="derrota">
+            <div >
                 <img src="IMG/escudos/Real_Jaen.png" alt="Real Jaén">
                 <p>2</p>
                 <p>:</p>
                 <p>1</p>
-                <img src="IMG/escudoRecreHuelva.png" alt="Recreativo Huelva">
+                <img src="IMG/escudoRecreHuelva.png" alt="Recreativo Huelva" class="derrota">
             </div>
 
-            <div class="derrota">
+            <div >
                 <img src="IMG/escudos/yeclano.png" alt="Yeclano">
                 <p>1</p>
                 <p>:</p>
                 <p>0</p>
-                <img src="IMG/escudoRecreHuelva.png" alt="Recreativo Huelva">
+                <img src="IMG/escudoRecreHuelva.png" alt="Recreativo Huelva" class="derrota">
             </div>
 
-            <div class="victoria">
-                <img src="IMG/escudoRecreHuelva.png" alt="Recreativo Huelva">
+            <div >
+                <img src="IMG/escudoRecreHuelva.png" alt="Recreativo Huelva" class="victoria">
                 <p>1</p>
                 <p>:</p>
                 <p>0</p>
                 <img src="IMG/escudos/Atl_Malagueño.png" alt="Atl Malaguño">
             </div>
         </div>
-
-
-
 
         <div class="divClasificacion">
             <div id="tituloClasificacion">

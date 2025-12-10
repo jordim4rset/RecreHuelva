@@ -1,35 +1,21 @@
 @use "variables" as *;
 
-/*
-@mixin colorDiv($resultado){
-    @if $resultado == victoria{
-        background-color: $colorVictoria;
-    } @else if $resultado == derrota{
-        background-color: $colorDerrota;
-    } @else if $resultado == empate{
-        background-color: $colorEmpate;
-    }
-}
-*/
-
 @mixin efectoGlass(){
-    background: $colorFondoEfectoGlass;
+    background: var(--color-fondo-efecto-glass);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-
-    border: 1px solid $colorBordeEfectoGlass;
+    border: 1px solid var(--color-borde-efecto-glass);
     border-radius: 15px;
-
-    box-shadow: 0 8px 30px $colorSombraCaja;
+    box-shadow: 0 8px 30px var(--color-sombra-caja);
 }
 
 @mixin colorDiv($resultado){
     @if $resultado == victoria{
-        box-shadow: 2px 2px 5px 0px $colorVictoria;
+        box-shadow: 2px 2px 5px 0px var(--color-victoria);
     } @else if $resultado == derrota{
-        box-shadow: 2px 2px 5px 0px $colorDerrota;
+        box-shadow: 2px 2px 5px 0px var(--color-derrota);
     } @else if $resultado == empate{
-        box-shadow: 2px 2px 5px 0px $colorEmpate;
+        box-shadow: 2px 2px 5px 0px var(--color-empate);
     }
 }
 
@@ -46,6 +32,5 @@
 @mixin col($width: 1){
     flex: $width;
     padding: 20px 20px;
-    border-bottom: 1px solid $colorBorde;
+    border-bottom: 1px solid var(--color-borde);
 }
-

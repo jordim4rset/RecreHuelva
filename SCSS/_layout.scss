@@ -12,18 +12,18 @@ nav {
     justify-content: space-around;
     width: 100%;
     height: 98px;
-    color: $colorNav;
-    background-color: $colorFondo;
+    color: var(--color-nav);
+    background-color: var(--color-fondo);
     font-size: 500;
     font-weight: bolder;
 
     a {
         text-decoration: none;
-        color: $colorLetrasHeader;
+        color: var(--color-letras-header);
     }
 }
 footer{
-    background: $colorFondo;
+    background: var(--color-fondo-footer);
     max-height: auto;
     margin-bottom: 0;
     margin-top: 10rem;
@@ -36,7 +36,7 @@ footer{
     h2{
         text-align: center;
         align-items: center;
-        color: $colorh2footer;
+        color: var(--color-h2-footer);
     }
     .patrocinadores{
         display: flex;
